@@ -9,12 +9,6 @@ import (
 const port = "8080"
 
 func main() {
-	// dbURL := os.Getenv("DB_URL")
-	// //db, err := sql.Open("postgres", dbURL)
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-
 	mux := http.NewServeMux()
 	server := &http.Server{
 		Addr:    ":" + port,
